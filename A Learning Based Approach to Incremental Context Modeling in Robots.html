@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0116)https://bozcani.github.io/A%20Learning%20Based%20Approach%20to%20Incremental%20Context%20Modeling%20in%20Robots.html -->
-<html class="gr__bozcani_github_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>A Learning Based Approach to Incremental Context Modeling in Robots</title>
 	<link rel="stylesheet" type="text/css" href="./A Learning Based Approach to Incremental Context Modeling in Robots_files/pvg.css">
 </head>
@@ -28,8 +27,8 @@ There have been several attempts at modeling context in robots. However, either 
 <ul>
 Fethiye Irmak Doğan, İlker Bozcan, Sinan Kalkan <br>
 <b>A Learning Based Approach to Incremental Context Modeling in Robots</b> (<b> ICRA 2018 </b>) <br>
-<a href="https://bozcani.github.io/A%20Learning%20Based%20Approach%20to%20Incremental%20Context%20Modeling%20in%20Robots.html"> [paper] </a> <a href="https://bozcani.github.io/A%20Learning%20Based%20Approach%20to%20Incremental%20Context%20Modeling%20in%20Robots.html"> [bibtex] </a>  <a href="https://bozcani.github.io/A%20Learning%20Based%20Approach%20to%20Incremental%20Context%20Modeling%20in%20Robots.html"> [code] </a> 
-<a href="https://bozcani.github.io/A%20Learning%20Based%20Approach%20to%20Incremental%20Context%20Modeling%20in%20Robots.html"> [poster] </a> <a href="https://bozcani.github.io/A%20Learning%20Based%20Approach%20to%20Incremental%20Context%20Modeling%20in%20Robots.html"> [talk] </a> <a href="https://bozcani.github.io/A%20Learning%20Based%20Approach%20to%20Incremental%20Context%20Modeling%20in%20Robots.html"> [slides] </a> 
+<a href=""> [paper] </a> <a href=""> [bibtex] </a>  <a href=""> [code] </a> 
+<a href=""> [poster] </a> <a href=""> [talk] </a> <a href=""> [slides] </a> 
 </ul>
 
 <!-- <h2>Bibtex</h2>
@@ -37,14 +36,29 @@ Fethiye Irmak Doğan, İlker Bozcan, Sinan Kalkan <br>
 
 </ul> -->
 
-
-<h2>Method &amp; Results</h2>
+<center>
+<h2>Methods</h2>
+</center>
 <p>
-</p><center><img src="./A Learning Based Approach to Incremental Context Modeling in Robots_files/tablo.png" style="width: 90%;"> <figcaption>TABLE I: Training and test accuracies for the different models. Accuracy is the percentage of correct increment decisions calculated over the artificial data.</figcaption> </center>
-<p></p>
+In order to obtain dataset, we used Latent Dirichlet Allocation (LDA), which, being a generative model, allows one to sample artificial data with various number of contexts (topics). Therefore our dataset consist of scenes generated with k number of contexts. Then, we trained LDA models with k0 contexts s.t. k0 ≤ k. Finally, we used probabilities of contexts given objects obtained from LDA in order to train LSTM model.
+</p>
 
 
+<center>
+<h2> Experiments and Results</h2>
+</center>
 
+<h3>Artificially Generated Dataset:</h3>
+<center><img src="./A Learning Based Approach to Incremental Context Modeling in Robots_files/tablo.png" style="width: 90%;"> <figcaption> <b> TABLE I:</b> Training and test accuracies for the different models. Accuracy is the percentage of correct increment decisions calculated over the artificial data.</figcaption> </center>
+
+<center><img src="./A Learning Based Approach to Incremental Context Modeling in Robots_files/prob1.png" style="width: 90%;"> <figcaption> <b> Figure 1:</b> Probability of incrementing contexts for various states of an LDA model on the artificial data. Ground truth is respectively (a) 5, (b) 7, (c) 10, (d) 15 and (e) 20. Note that the network was trained for LDA models up to 10 contexts.</figcaption> </center>
+
+<center><img src="./A Learning Based Approach to Incremental Context Modeling in Robots_files/ent1.png" style="width: 65%;"> <figcaption> <b> Figure 2:</b> How the entropy of the system changes on the artificial dataset with respect to change in number of contexts. The graph is for the subset of the data with 5 contexts (arbitrarily selected from the dataset).</figcaption> </center>
+
+<h3>Real Dataset:</h3>
+<center><img src="./A Learning Based Approach to Incremental Context Modeling in Robots_files/prob2.png" style="width: 50%;"> <figcaption> <b> Figure3:</b> Probability of incrementing contexts for various states of the LDA model on the real data.</figcaption> </center>
+
+<center><img src="./A Learning Based Approach to Incremental Context Modeling in Robots_files/ent2.png" style="width: 70%;"> <figcaption> <b> TABLE I:</b> How the entropy of the system changes on the real dataset with respect to change in number of contexts. There are 25 sub-categories (giving as a baseline for contexts).</figcaption> </center>
 
          
 
