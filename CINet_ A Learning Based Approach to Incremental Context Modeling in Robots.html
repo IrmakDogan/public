@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0122)http://kovan.ceng.metu.edu.tr/~ilker/publications/A_Learning_Based_Approach_to_Incremental_Context_Modeling_in_Robots.html -->
+<html class="gr__kovan_ceng_metu_edu_tr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>CINet: A Learning Based Approach to Incremental Context Modeling in Robots</title>
+	<link rel="stylesheet" type="text/css" href="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/pvg.css">
+</head>
+<body data-gr-c-s-loaded="true">
+<div><a href="http://www.kovan.ceng.metu.edu.tr/" target="_self"><img src="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/kovan_logo_yan.png" style="margin-top: 5px;" height="80px" width="289px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <div class="icon"><a href="http://www.kovan.ceng.metu.edu.tr/"><img src="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/home.svg">Home</a></div><div class="icon"><a href="http://www.kovan.ceng.metu.edu.tr/index.php/Research"><img src="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/research.svg">Research</a></div><div class="icon"><a href="http://www.kovan.ceng.metu.edu.tr/index.php/Publications"><img src="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/publications.svg">Publications</a></div><div class="icon"><a href="http://www.kovan.ceng.metu.edu.tr/index.php/Members"><img src="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/people.svg">People</a></div></div>
+
+
+<table width="85%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top: 30px;">
+  <tbody><tr> 
+    <td> 
+
+
+
+<h1 align="center" style="font-size: 18pt;"><b>CINet: A Learning Based Approach to Incremental Context Modeling in Robots</b></h1><br>
+
+<center><img src="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/overview.png" style="width: 50%;"> <figcaption>An overview of how incremental context modeling is addressed as a learning problem. When a new scene is encountered, the objects are detected (not a contribution of the paper), and the Latent Dirichlet Allocation Model is updated. The updated model is fed as input to a Recurrent Neural Network, which predicts whether to increment the number of contexts.</figcaption> </center>
+
+<h2>Abstract</h2>
+<p>
+There have been several attempts at modeling context in robots. However, either these attempts assume a fixed number of contexts or use a rule-based approach to determine when to increment the number of contexts. In this paper, we propose to pose the task of incrementing as a learning problem, which we solve using a Recurrent Neural Network. We show that the network successfully (with 98\% testing accuracy) learns to predict when to increment, and demonstrate, in a scene modeling problem (where the correct number of contexts is not known), that the robot increments the number of contexts in an expected manner (i.e., the entropy of the system is reduced). We also present how the incremental model can be used for various scene reasoning tasks.
+</p>
+
+<h2>Paper</h2>
+
+<ul>
+Fethiye Irmak Doğan*, İlker Bozcan, Mehmet Celik, Sinan Kalkan <br>
+* Equal contribution  
+<br>
+<b>CINet: A Learning Based Approach to Incremental Context Modeling in Robots</b> (<b>Submitted to IROS 2018</b>)<br>
+<a href="https://arxiv.org/abs/1710.04981"> [paper] </a> 
+</ul>
+
+<!-- <h2>Bibtex</h2>
+<ul>
+
+</ul> -->
+
+<center>
+<h2>Methods</h2>
+</center>
+<p>
+In order to obtain dataset, we used Latent Dirichlet Allocation (LDA), which, being a generative model, allows one to sample artificial data with various number of contexts (topics). Therefore our dataset consist of scenes generated with k number of contexts. Then, we trained LDA models with k0 contexts s.t. k0 ≤ k. Finally, we used probabilities of contexts given objects obtained from LDA in order to train LSTM model.
+</p>
+
+
+<center>
+<h2> Experiments and Results</h2>
+</center>
+
+<h3>Artificially Generated Dataset:</h3>
+<center><img src="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/tablo.png" style="width: 90%;"> <figcaption> <b> TABLE I:</b> Training and test accuracies for the different models. Accuracy is the percentage of correct increment decisions calculated over the artificial data.</figcaption> </center>
+
+<center><img src="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/prob1.png" style="width: 90%;"> <figcaption> <b> Figure 1:</b> Probability of incrementing contexts for various states of an LDA model on the artificial data. Ground truth is respectively (a) 5, (b) 7, (c) 10, (d) 15 and (e) 20. Note that the network was trained for LDA models up to 10 contexts.</figcaption> </center>
+
+<center><img src="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/ent1.png" style="width: 65%;"> <figcaption> <b> Figure 2:</b> How the entropy of the system changes on the artificial dataset with respect to change in number of contexts. The graph is for the subset of the data with 5 contexts (arbitrarily selected from the dataset).</figcaption> </center>
+
+<h3>Real Dataset:</h3>
+<center><img src="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/prob2.png" style="width: 50%;"> <figcaption> <b> Figure3:</b> Probability of incrementing contexts for various states of the LDA model on the real data.</figcaption> </center>
+
+<center><img src="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/ent2.png" style="width: 70%;"> <figcaption> <b> Figure4:</b> How the entropy of the system changes on the real dataset with respect to change in number of contexts. There are 25 sub-categories (giving as a baseline for contexts).</figcaption> </center>
+
+         
+
+
+<!-- <h2>Code</h2>
+<ul>
+Coming soon ...
+</ul> -->
+
+<h2>Video</h2>
+
+<center>
+<iframe width="853" height="480" src="./CINet_ A Learning Based Approach to Incremental Context Modeling in Robots_files/YcSSPsUz_uM.html" frameborder="0" allowfullscreen=""></iframe>
+</center>
+<br>
+
+
+<div style="text-align: center; width: 100%; margin-top: 25px; "><p style="color: #999; font-size: 9pt; ">© <script>document.write(new Date().getFullYear())</script>201820182017 KOVAN Research Labs ‒ <a href="http://www.ceng.metu.edu.tr/" style="color:#EE7F2D;">Department of Computer Engineering</a> @ <a href="http://www.metu.edu.tr/" style="color:#EE7F2D;">Middle East Technical University</a> ‒ Üniversiteler Mahallesi, 
+Dumlupınar Bulvarı No:1
+06800 Çankaya Ankara/TÜRKİYE.</p></div>
+
+</td></tr></tbody></table>
+<div style="background-color: rgb(255, 143, 0); display: none; color: white; text-align: center; position: fixed; top: 0px; left: 0px; width: 100%; height: auto; min-width: 100%; min-height: auto; max-width: 100%; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Geneva, sans-serif; cursor: pointer; padding: 5px;"><span style="color: white; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Geneva, sans-serif;">You have turned off the paragraph player. You can turn it on again from the options page.</span><img src="chrome-extension://gfjopfpjmkcfgjpogepmdjmcnihfpokn/img/icons/icon-close_16.png" style="width: 20px; height: auto; min-width: 20px; min-height: auto; max-width: 20px; float: right; margin-right: 10px;"></div>
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
