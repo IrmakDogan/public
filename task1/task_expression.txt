@@ -1,96 +1,96 @@
-the cup in front of the bottle
-the person to the left of the vase
-the cup behind the book
-the book behind the sports ball
-the couch to the right of the couch
-the book to the right of the bottle
-the mouse to the left of the sports ball
-the cup to the left of the sports ball
-the bottle behind the book
-the mouse behind the book
-the chair behind the book
-the bottle behind the sports ball
-the car to the right of the potted plant
-the book to the left of the book
-the person behind the dining table
-the book to the right of the book
-the book to the left of the bottle
-the cup to the right of the book
-the car to the left of the bench
-the mouse on top of the keyboard
-the mouse in front of the cup
-the book at the bottom of the bottle
-the bowl to the right of the oven
-the chair at the bottom of the potted plant
-the car to the right of the person
-the car to the right of the person
-the couch to the left of the dining table
-the chair to the right of the potted plant
-the mouse in front of the cup
-the car to the right of the truck
 the person to the left of the truck
-the person to the left of the person
-the book at the bottom of the cup
-the bottle to the right of the mouse
-the mouse to the right of the bottle
 the book in front of the dining table
-the bed to the right of the chair
-the chair to the right of the chair
-the cup behind the sports ball
-the bottle behind the book
-the chair to the right of the dining table
-the book to the left of the cup
-the book to the left of the sports ball
-the person behind the dining table
-the bottle behind the sports ball
-the chair to the left of the bowl
-the bowl to the left of the vase
-the chair to the right of the bottle
-the car to the right of the car
-the sink to the left of the bottle
-the chair to the right of the couch
-the bottle to the left of the dining table
-the cup to the right of the mouse
-the car to the right of the truck
-the bus to the left of the person
-the couch to the right of the refrigerator
-the book to the right of the mouse
-the book to the right of the mouse
-the bottle to the left of the sports ball
-the book to the left of the sports ball
-the book to the right of the bottle
-the book behind the book
-the book in front of the dining table
-the cup to the left of the book
-the book in front of the cup
-the mouse on top of the book
-the chair to the right of the vase
-the cup behind the book
-the mouse to the left of the sports ball
-the car in front of the potted plant
-the chair in front of the laptop
-the cup to the right of the bottle
-the mouse on top of the book
-the couch behind the dining table
-the chair behind the couch
-the mouse to the right of the sports ball
-the person to the left of the bowl
-the car to the right of the potted plant
-the bottle to the right of the mouse
-the car to the left of the vase
-the person on top of the car
 the person to the right of the handbag
-the bus to the right of the train
-the book to the left of the bottle
-the chair to the left of the potted plant
-the chair to the right of the laptop
-the bottle to the left of the cup
-the couch in front of the chair
+the car to the right of the person
+the chair to the left of the bowl
+the person to the left of the vase
+the car to the right of the truck
+the bottle behind the book
+the couch to the right of the refrigerator
+the chair to the right of the dining table
+the bottle to the right of the mouse
+the bottle behind the book
+the car to the right of the potted plant
+the cup to the right of the book
+the book to the right of the mouse
 the bottle to the left of the book
-the mouse to the right of the sports ball
-the cup behind the sports ball
-the person to the right of the person
-the couch to the right of the dining table
-the chair to the right of the bed
-the person at the bottom of the backpack
 the bed to the right of the bed
+the car to the right of the person
+the car to the right of the car
+the book to the right of the book
+the bottle to the right of the mouse
+the bus to the right of the train
+the chair to the right of the potted plant
+the book in front of the dining table
+the person behind the dining table
+the chair to the right of the vase
+the car to the right of the potted plant
+the bottle behind the sports ball
+the car to the right of the truck
+the chair behind the book
+the cup behind the sports ball
+the bus to the left of the person
+the cup in front of the bottle
+the couch to the left of the dining table
+the book to the left of the book
+the person at the bottom of the backpack
+the bowl to the right of the oven
+the book to the left of the cup
+the book to the right of the mouse
+the person behind the dining table
+the chair to the right of the chair
+the chair to the right of the bottle
+the cup to the left of the sports ball
+the book to the left of the sports ball
+the bottle to the left of the cup
+the car to the left of the bench
+the book behind the book
+the mouse on top of the book
+the bottle behind the sports ball
+the cup behind the book
+the chair to the left of the potted plant
+the cup to the right of the bottle
+the book to the left of the sports ball
+the chair behind the couch
+the sink to the left of the bottle
+the book to the right of the bottle
+the bowl to the left of the vase
+the book in front of the cup
+the couch in front of the chair
+the chair to the right of the couch
+the chair at the bottom of the potted plant
+the person to the left of the bowl
+the couch to the right of the couch
+the mouse to the left of the sports ball
+the person to the left of the person
+the bottle to the left of the sports ball
+the chair to the right of the bed
+the chair in front of the laptop
+the couch behind the dining table
+the mouse in front of the cup
+the mouse to the right of the bottle
+the mouse to the right of the sports ball
+the person on top of the car
+the bottle to the left of the dining table
+the couch to the right of the dining table
+the book to the right of the bottle
+the mouse behind the book
+the mouse on top of the keyboard
+the chair to the right of the laptop
+the mouse to the left of the sports ball
+the cup behind the book
+the bed to the right of the chair
+the mouse to the right of the sports ball
+the car to the left of the vase
+the person to the right of the person
+the book at the bottom of the bottle
+the cup to the left of the book
+the book behind the sports ball
+the cup behind the sports ball
+the cup to the right of the mouse
+the book to the left of the bottle
+the mouse in front of the cup
+the book to the left of the bottle
+the mouse on top of the book
+the book at the bottom of the cup
+the car in front of the potted plant
