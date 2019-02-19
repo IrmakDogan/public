@@ -40,7 +40,7 @@ body2.write("<center><a href=\"task1_2.html\">Previous page</a> &nbsp;&nbsp; &nb
 	
 body3 = open("task1_4.html", "w")
 body3.write("<!DOCTYPE html>\n<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n\t<title>Write the label number of the described target (-1 if expression is ambiguous)</title>\n\t<link rel=\"stylesheet\" type=\"text/css\"\n</head>\n<body>\n\n\n<table width=\"85%\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\" style=\"margin-top: 30px;\">\n  <tbody><tr> \n    <td> \n\n")  
-for i in range(75,108):
+for i in range(75,96):
 	body3.write("<center><b> <font size=\"65\"> Image "+str(i+1) + ": </b></center>\n")
 	expression = exp.readline() 
 	if os.path.isfile("./task1/image"+str(i+1)+".png"):
