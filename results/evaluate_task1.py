@@ -13,7 +13,7 @@ res_folders = []
 for filename in os.listdir(res_path):
 	res_folders.append(open(res_path+filename,"r"))
 
-#res_folders.append(open(res_path+os.listdir(res_path)[9],"r"))
+#res_folders.append(open(res_path+os.listdir(res_path)[16],"r"))
 #print res_folders
 
 for i in range(96):
@@ -55,10 +55,10 @@ for i in range(96):
 				special.append(-1)
 			elif ans != mytarget:
 				special.append(0)
-#print len(our)
-#print len(baseline)
-#print len(common)
-#print len(special)
+print len(our)
+print len(baseline)
+print len(common)
+print len(special)
 
 print 'our correct:',(our.count(1)/len(our))
 print 'our false:',(our.count(0)/len(our))
