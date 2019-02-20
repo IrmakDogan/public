@@ -1,7 +1,7 @@
 import os.path
 
 body = open("task1.html", "w") 
-body.write("<!DOCTYPE html>\n<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n\t<title> Task 1</title>\n\t<link rel=\"stylesheet\" type=\"text/css\"\n</head>\n<body>\n\n\n<table width=\"85%\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\" style=\"margin-top: 30px;\">\n  <tbody><tr> \n    <td> \n\n\n\n<h1 align=\"center\" style=\"font-size: 24pt;\"><b>In the first task, the images are provided with and without object bounding boxes. Please write the bounding box number of the described object in the scene. If the expression is ambiguous, please write -1.</b></h1><br>\n\n")
+body.write("<!DOCTYPE html>\n<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n\t<title> Task 1</title>\n\t<link rel=\"stylesheet\" type=\"text/css\"\n</head>\n<body>\n\n\n<table width=\"85%\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\" style=\"margin-top: 30px;\">\n  <tbody><tr> \n    <td> \n\n\n\n<h1 align=\"center\" style=\"font-size: 24pt;\"><b>In the first task, the images are provided with and without object bounding boxes. Please write the bounding box number of the described object in the scene. If the expression is ambiguous, please write -1 and do not make a random guess.</b></h1><br>\n\n")
 exp = open("./task1/task_expression.txt", "r")
 for i in range(25):
 	body.write("<center><b> <font size=\"65\"> Image "+str(i+1) + ": </b></center>\n")
