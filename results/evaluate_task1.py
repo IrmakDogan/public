@@ -21,7 +21,7 @@ for i in range(96):
 	mytarget = int(target.readline())
 	if 'our' in case:
 		for fol in res_folders:
-			print fol
+			#print fol
 			ans = int(fol.readline().split(':')[1])
 			if ans == mytarget:
 				our.append(1)
@@ -31,7 +31,7 @@ for i in range(96):
 				our.append(0)
 	elif 'baseline' in case:
 		for fol in res_folders:
-			print fol
+			#print fol
 			ans = int(fol.readline().split(':')[1])
 			if ans == mytarget:
 				baseline.append(1)
@@ -41,7 +41,7 @@ for i in range(96):
 				baseline.append(0)
 	elif 'common' in case:	
 		for fol in res_folders:
-			print fol
+			#print fol
 			ans = int(fol.readline().split(':')[1])
 			if ans == mytarget:
 				common.append(1)
@@ -51,7 +51,7 @@ for i in range(96):
 				common.append(0)
 	elif 'special' in case:
 		for fol in res_folders:
-			print fol
+			#print fol
 			ans = int(fol.readline().split(':')[1])
 			if ans == mytarget:
 				special.append(1)
