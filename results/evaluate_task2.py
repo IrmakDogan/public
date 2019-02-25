@@ -30,6 +30,11 @@ for i in range(31):
 
 print len(selections)
 
+print 'our method num:',(selections.count(1))
+print 'baseline num:',(selections.count(2))
+print 'none of them num:',(selections.count(-1))
+print 'either of them num:',(selections.count(0))
+
 print 'our method:',(selections.count(1)/len(selections))
 print 'baseline:',(selections.count(2)/len(selections))
 print 'none of them:',(selections.count(-1)/len(selections))

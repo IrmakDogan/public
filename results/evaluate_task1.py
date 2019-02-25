@@ -64,9 +64,17 @@ print len(baseline)
 print len(common)
 print len(special)
 
+print 'our correct num:',(our.count(1))
+print 'our false num:',(our.count(0))
+print 'our amb num:',(our.count(-1))
+
 print 'our correct:',(our.count(1)/len(our))
 print 'our false:',(our.count(0)/len(our))
 print 'our amb:',(our.count(-1)/len(our))
+
+print 'baseline correct num:',(baseline.count(1))
+print 'baseline false num:',(baseline.count(0))
+print 'baseline amb num:',(baseline.count(-1))
 
 print 'baseline correct:',(baseline.count(1)/len(baseline))
 print 'baseline false:',(baseline.count(0)/len(baseline))
