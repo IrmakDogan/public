@@ -1,5 +1,5 @@
 Participants:
-
+[31, 25, 26, 26, 26, 27, 26, 27, 30, 22, 28, 24, 30, 29, 24, 30, 27, 22, 26, 26, 29, 28, 37, 25, 24, 26, 34]
 Famele participants:
 Sofia 31 +
 Sanne 25 +
@@ -29,8 +29,9 @@ Taylan kadin 37 *
 Goksu 25 *
 Pinar 24 *
 Zebus 26 *
+Eda 34 *
 
-
+[32,27,25,28,31,26,27,26,27,24,32,26,23,27,23,24,38,33,24,25,28,27,26,30,41,26,40,27,31,30,30,25,32,39]
 Male Participants:
 Akshaya 32 +
 Diogo 27 +
@@ -61,7 +62,7 @@ Ilker 26 *
 Taylan arkadas 40 *
 Alper 27 *
 Patric 31 -
-Sinan *
+Sinan 30 *
 Burak 30 *
 Yusuf 25 *
 Dimos 32 -
@@ -127,9 +128,10 @@ Taylan kadin
 Pinar
 Goksu
 Mak
-Kadin
 Sinan
 Zebus
+Eda
+Kadin
 
 Task2:
 Sofia
@@ -186,3 +188,6 @@ Dimos
 Taylan kadin
 Pinar
 Mak
+Sinan
+Zebus
+Eda
