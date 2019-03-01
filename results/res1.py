@@ -18,14 +18,14 @@ plt.bar(index, means_frank, bar_width,
                  color='lightsalmon',
                  label='Our Method')
 for i, v in enumerate(means_frank):
-    ax.text( i + .017,v + 1, "%" + str(v), color='black', fontsize = 20)
+    ax.text( i + .017,v + 1, str(v) + "%", color='black', fontsize = 20)
  
 plt.bar(index + bar_width, means_guido, bar_width,
                  alpha=opacity,
                  color='lightcyan',
                  label='KRREG')
 for i, v in enumerate(means_guido):
-    ax.text( i + bar_width+ .017,v + 1, "%" + str(v), color='black', fontsize = 20)
+    ax.text( i + bar_width+ .017,v + 1, str(v) + "%", color='black', fontsize = 20)
 
 plt.yticks(fontsize=24)
 plt.ylabel('Percentage of selection', fontsize=24)
